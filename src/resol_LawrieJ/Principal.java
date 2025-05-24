@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Seleccione el ejercicio a ejecutar (1-7):");
+        System.out.println("Seleccione el ejercicio a ejecutar (1-9):");
         int opcion = scanner.nextInt();
         scanner.nextLine(); // Limpiar el salto de línea
 
@@ -30,6 +30,12 @@ public class Principal {
                 break;
                 case 7:
                     Ejercicio7.ejecutar();
+                    break;
+                    case 8:
+                    Ejercicio8.combustible();
+                    break;
+                    case 9:
+                    Ejercicio9.cuentaBilletes();
                     break;
             default:
                 System.out.println("Opción no válida.");
